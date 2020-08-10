@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnlogin" type="id" />
+    <item name="txtemail" type="id" />
+    <item name="txtsenha" type="id" />
+    <item name="fab" type="id" />
+    <item name="view_pager" type="id" />
+</resources>

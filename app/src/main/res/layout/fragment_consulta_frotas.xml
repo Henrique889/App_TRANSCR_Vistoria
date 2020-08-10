@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Editar / Excluir Frotas"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:hint="Código"
+                android:inputType="" />
+
+            <ImageButton
+                android:id="@+id/btnConsult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_search"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="7"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txt_placaVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:hint="Placa do Veículo"
+            android:inputType=""
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Modelo"
+            android:inputType=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imagemId"
+        >
+
+        <Button
+            android:id="@+id/btnAtualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atualizar"
+            android:layout_weight="2"
+            android:layout_marginRight="1dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/btnDeletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deletar"
+            android:layout_weight="2"
+            android:layout_marginRight="1dp"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imagemId"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/linearLayout"
+        android:src="@drawable/sem_foto"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

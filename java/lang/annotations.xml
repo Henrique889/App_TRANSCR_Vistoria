@@ -1,0 +1,12 @@
+<root>
+    <item name='java.lang.Thread inheritableThreadLocals'>
+        <annotation name='android.support.annotation.Nullable' />
+        <annotation name='java.lang.Deprecated' />
+    </item>
+    <item name='java.lang.Thread.Caches subclassAudits'>
+        <annotation name='android.support.annotation.Nullable' />
+    </item>
+    <item name='java.lang.ThreadLocal'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

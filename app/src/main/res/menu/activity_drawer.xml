@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_registro"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Registrar Frotas" />
+
+                <item
+                    android:id="@+id/nav_consulta"
+                    android:icon="@android:drawable/ic_menu_search"
+                    android:title="Editar / Deletar Frotas" />
+
+                <item
+                    android:id="@+id/nav_consulta_lista"
+                    android:icon="@drawable/baseline_build_black_24dp"
+                    android:title="Fazer CheckList Veículo" />
+
+                <item
+                    android:id="@+id/nav_checklist2"
+                    android:icon="@drawable/baseline_build_black_24dp"
+                    android:title="Parte 2 Pneus/Radiador" />
+                <item
+                    android:id="@+id/nav_cadastro"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Cadastrar Veículo na Ficha"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/nav_carreta"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Registrar Carretas" />
+                <item
+                    android:id="@+id/nav_cadastro_carreta"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Cadastrar Carreta na Ficha " />
+                <item
+                    android:id="@+id/nav_consultar_carretas_lista"
+                    android:icon="@drawable/baseline_build_black_24dp"
+                    android:title="Fazer CheckList Carreta" />
+                <item
+                    android:id="@+id/nav_desenhar_avarias"
+                    android:icon="@android:drawable/ic_input_get"
+                    android:title="Avarias nas Carretas (Imagens)" />
+
+                <item
+                    android:id="@+id/nav_escolher_foto"
+                    android:icon="@android:drawable/ic_input_get"
+                    android:title="(Caminhão)Mostrar Avarias" />
+
+                <item
+                    android:id="@+id/nav_lookImages"
+                    android:icon="@android:drawable/ic_menu_gallery"
+                    android:title="Imagens das Avarias" />
+
+        </group>
+
+</menu>

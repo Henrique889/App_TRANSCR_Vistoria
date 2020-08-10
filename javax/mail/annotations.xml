@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='javax.mail.Message android.location.Address[] getRecipients(javax.mail.Message.RecipientType)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.transcr" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher_tcr"
+        android:label="App CheckList Trans Cr"
+        android:icon="@mipmap/ic_launcher_tcr"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ShowAvariasImages.Ver_TodasAvarias_Carretas"/>
+        <activity android:name=".ShowAvariasImages.Ver_TodasAvarias"/>
+        <activity android:name=".Touch_Draw.OlharImagensCarretas"/>
+        <activity android:name=".Touch_Draw.OlharImagens"/>
+        <activity android:name=".Touch_Draw.TouchDraw"/>
+        <activity android:name=".Fragmentos.VistoriaCavalo_P2"/>
+        <activity android:name=".Fragmentos.VistoriaTab_Caminhao_P2"/>
+        <activity android:name=".Fragmentos.VistoriaTab_CamInterclima_p2"/>
+        <activity android:name=".Fragmentos.VistoriaCarroceria_P2"/>
+        <activity android:name=".Fragmentos.VistoriaTabSprinter_p2"/>
+        <activity android:name=".Fragmentos.VistoriaSprinterMercedes_P2"/>
+        <activity android:name=".Fragmentos.EscolhaTipoVistoria"/>
+        <activity android:name=".Fragmentos.EscolhaTipoVistoria2"/>
+        <activity android:name=".EscolhaVeiculo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".EscolhaVeiculoUser"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".login"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+</manifest>
