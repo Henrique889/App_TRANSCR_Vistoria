@@ -113,6 +113,9 @@ public class EscolhaVeiculo extends AppCompatActivity implements NavigationView.
     @Override
     public boolean onNavigationItemSelected ( @NonNull MenuItem menuItem ) {
         switch (menuItem.getItemId()) {
+            case R.id.nav_pag_inicio:
+                getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new Pagina_Inicial() ).commit();
+                break;
             case R.id.nav_registro:
                 getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new RegistrarFrota() ).commit();
                 break;

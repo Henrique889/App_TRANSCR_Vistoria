@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_p"
+    tools:context=".Pagina_Inicial">
+
+    <Button
+        android:id="@+id/buttonFicha"
+        android:layout_width="267dp"
+        android:layout_height="78dp"
+        android:background="#2424DF"
+        android:foreground="@android:drawable/ic_menu_more"
+        android:foregroundGravity="top|right"
+        android:freezesText="true"
+        android:text="Fazer CheckList da Ficha de Vistoria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <Button
+        android:id="@+id/buttonRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2639E6"
+        android:drawableStart="?android:attr/actionModeFindDrawable"
+        android:text="Fazer Relatório Mensal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop"
+        android:drawableLeft="?android:attr/actionModeFindDrawable" />
+</android.support.constraint.ConstraintLayout>

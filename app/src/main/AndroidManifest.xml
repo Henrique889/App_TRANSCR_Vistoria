@@ -28,6 +28,7 @@
         <activity android:name=".Touch_Draw.OlharImagensCarretas"/>
         <activity android:name=".Touch_Draw.OlharImagens"/>
         <activity android:name=".Touch_Draw.TouchDraw"/>
+        <activity android:name=".Fragmentos.relatorio_mensal.Relatorio_M3"/>
         <activity android:name=".Fragmentos.VistoriaCavalo_P2"/>
         <activity android:name=".Fragmentos.VistoriaTab_Caminhao_P2"/>
         <activity android:name=".Fragmentos.VistoriaTab_CamInterclima_p2"/>

@@ -20,6 +20,10 @@ import com.example.transcr.Fragmentos.RegistrarCarretas;
 import com.example.transcr.Fragmentos.RegistrarFrota;
 import com.example.transcr.Fragmentos.TipoDeCarreta;
 import com.example.transcr.Fragmentos.TipoDeVistoria;
+import com.example.transcr.Fragmentos.relatorio_mensal.Relatorio_M1;
+import com.example.transcr.Fragmentos.relatorio_mensal.Relatorio_M2;
+import com.example.transcr.Fragmentos.relatorio_mensal.Relatorio_M3;
+import com.example.transcr.Pagina_Inicial;
 import com.example.transcr.ShowAvariasImages.EscolhaTipoVeiculo_Carretas;
 import com.example.transcr.ShowAvariasImages.EscolherCaminhao_Avarias2;
 import com.example.transcr.ShowAvariasImages.EscolherCarretas_Avarias2;
@@ -47,7 +51,11 @@ public interface Ifragmentos extends
         EscolhaTipoVeiculo_Carretas.OnFragmentInteractionListener,
         EscolherCaminhao_Avarias2.OnFragmentInteractionListener,
         EscolherCarretas_Avarias2.OnFragmentInteractionListener,
-        Parte2_CheckList_Caminhao.OnFragmentInteractionListener
+        Parte2_CheckList_Caminhao.OnFragmentInteractionListener,
+        Relatorio_M1.OnFragmentInteractionListener,
+        Relatorio_M2.OnFragmentInteractionListener,
+        Relatorio_M3.OnFragmentInteractionListener,
+        Pagina_Inicial.OnFragmentInteractionListener
 {
 }
 

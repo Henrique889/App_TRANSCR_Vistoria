@@ -6,6 +6,10 @@
 
         <group android:checkableBehavior="single">
                 <item
+                    android:id="@+id/nav_pag_inicio"
+                    android:icon="@drawable/ic_home"
+                    android:title="Página Inicial" />
+                <item
                     android:id="@+id/nav_registro"
                     android:icon="@android:drawable/ic_menu_edit"
                     android:title="Registrar Frotas" />

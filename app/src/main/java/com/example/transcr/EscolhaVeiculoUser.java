@@ -57,8 +57,8 @@ public class EscolhaVeiculoUser extends AppCompatActivity implements NavigationV
         NavigationView navigationView = findViewById( R.id.nav_view );
         navigationView.setNavigationItemSelectedListener( this );
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new ConsultaList_Fragment() ).commit();
-            navigationView.setCheckedItem( R.id.nav_consulta_lista );
+            getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new Pagina_Inicial() ).commit();
+            navigationView.setCheckedItem( R.id.nav_pag_inicio );
         }
     }
 
@@ -74,6 +74,9 @@ public class EscolhaVeiculoUser extends AppCompatActivity implements NavigationV
     @Override
     public boolean onNavigationItemSelected ( @NonNull MenuItem menuItem ) {
         switch (menuItem.getItemId()) {
+            case R.id.nav_pag_inicio:
+                getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new Pagina_Inicial() ).commit();
+                break;
             case R.id.nav_consulta_lista:
                 getSupportFragmentManager().beginTransaction().replace( R.id.fragment, new ConsultaList_Fragment() ).commit();
                 break;
