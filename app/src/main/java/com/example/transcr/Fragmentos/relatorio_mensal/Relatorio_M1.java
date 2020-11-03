@@ -134,8 +134,8 @@ public class Relatorio_M1 extends Fragment {
                 String FiltroCombustivel_km = txtFiltroCombustivel_Km.getText().toString();
                 String FiltroCombustivel_troca = txtFiltroCombustivel_Troca.getText().toString();
                 String FiltroAr_Data = txtFiltroAr_Data.getText().toString();
-                String FiltroAr_km = txtFiltroAr_Data.getText().toString();
-                String FiltroAr_troca = txtFiltroAr_Data.getText().toString();
+                String FiltroAr_km = txtFiltroAr_Km.getText().toString();
+                String FiltroAr_troca = txtFiltroAr_Troca.getText().toString();
 
                 detailIntent.putExtra("One",Placa);
                 detailIntent.putExtra("Two",Data);
