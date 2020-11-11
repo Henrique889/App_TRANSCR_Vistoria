@@ -508,7 +508,7 @@ public class Parte2_CheckList_Caminhao extends Fragment {
                 break;
         }
 
-        bitmap=redimensionarImagem(bitmap,600,600);
+        bitmap=redimensionarImagem(bitmap,580,580);
     }
 
     private Bitmap redimensionarImagem(Bitmap bitmap, float larguraNova, float alturaNova) {
