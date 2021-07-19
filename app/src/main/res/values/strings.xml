@@ -92,6 +92,7 @@
     <string name="taco_grafo">Tacógrafo</string>
     <string name="name">Name</string>
     <string name="todo">TODO</string>
+    <string name="lembrar_email_cadastrado">Lembrar email cadastrado</string>
     <string-array name="pneus_obs">
         <item>Novo</item>
         <item>Bom</item>

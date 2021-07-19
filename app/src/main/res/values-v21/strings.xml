@@ -91,4 +91,5 @@
     <string name="inserir_ficha_de_vistoria">Inserir Ficha de Vistoria</string>
     <string name="tac_grafo">Tacógrafo</string>
     <string name="todo">TODO</string>
+    <string name="lembrar_email_cadastrado">Lembrar email cadastrado</string>
 </resources>
