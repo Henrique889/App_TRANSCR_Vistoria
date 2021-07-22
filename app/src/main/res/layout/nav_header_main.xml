@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="110dp"
+    android:background="#142167"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
     android:padding="10dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
@@ -14,8 +14,7 @@
         android:layout_width="88dp"
         android:layout_height="70dp"
         android:contentDescription="TODO"
-        android:src="@drawable/ic_launcher_foreground1"
-        app:srcCompat="@drawable/ic_launcher_foreground1" />
+        android:src="@drawable/trans_cr_pasta2" />
 
     <TextView
         android:layout_width="match_parent"

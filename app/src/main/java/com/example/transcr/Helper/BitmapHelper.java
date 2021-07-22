@@ -1,8 +1,9 @@
 package com.example.transcr.Helper;
 
 import android.graphics.Bitmap;
-import android.support.v4.util.LruCache;
 import android.util.Log;
+
+import androidx.collection.LruCache;
 
 /**
  * This class helps caching images for faster loading on second activity open.

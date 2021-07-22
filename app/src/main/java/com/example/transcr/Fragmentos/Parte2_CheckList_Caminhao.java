@@ -18,9 +18,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.FileProvider;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -34,6 +31,10 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.FileProvider;
+import androidx.fragment.app.Fragment;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -738,7 +739,7 @@ public class Parte2_CheckList_Caminhao extends Fragment {
     }
     private void solicitarPermissoesManual() {
         final CharSequence[] opciones = {"sim", "não"};
-        final android.support.v7.app.AlertDialog.Builder alertOpciones = new android.support.v7.app.AlertDialog.Builder(getContext());
+        final AlertDialog.Builder alertOpciones = new AlertDialog.Builder(getContext());
         alertOpciones.setTitle("Deseja configurar as permissões manualmente?");
         alertOpciones.setItems(opciones, new DialogInterface.OnClickListener() {
             @Override
@@ -759,7 +760,7 @@ public class Parte2_CheckList_Caminhao extends Fragment {
     }
 
     private void carregarDialogoRecomendacao() {
-        android.support.v7.app.AlertDialog.Builder dialogo=new android.support.v7.app.AlertDialog.Builder(getContext());
+        AlertDialog.Builder dialogo=new AlertDialog.Builder(getContext());
         dialogo.setTitle("Permissões Desativadas");
         dialogo.setMessage("Deve aceitar as permissões para funcionamento completo do App");
 
