@@ -1,11 +1,12 @@
 package com.example.myapplication.ui.main;
 
 import android.content.Context;
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 import com.example.myapplication.R;
 
