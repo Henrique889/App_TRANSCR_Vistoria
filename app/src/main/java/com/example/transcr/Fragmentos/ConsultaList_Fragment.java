@@ -125,7 +125,6 @@ public class ConsultaList_Fragment extends Fragment implements Response.Listener
         String ip = getString( R.string.ip2 );
         String url = ip+"/webservice/consultarListafrota.php";
 
-
         jsonObjectRequest = new JsonObjectRequest( Request.Method.GET, url, null, this, this);
         MySingleton.getInstance(getContext()).addToRequestQueue(jsonObjectRequest);
     }
