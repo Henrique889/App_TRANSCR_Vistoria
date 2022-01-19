@@ -1,5 +1,8 @@
 package com.example.transcr.Fragmentos;
 
+import static android.Manifest.permission.CAMERA;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -55,9 +58,6 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static android.Manifest.permission.CAMERA;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class Parte2_CheckList_Caminhao extends Fragment {
 
@@ -422,8 +422,8 @@ public class Parte2_CheckList_Caminhao extends Fragment {
 
     }
     private void carregarDialog() {
-        final CharSequence[] opcoes = {"Tirar Foto", "Selecionar da Galeria", "Cancelar"};
-        final AlertDialog.Builder builder=new AlertDialog.Builder(getContext());
+        CharSequence[] opcoes = {"Tirar Foto", "Selecionar da Galeria", "Cancelar"};
+        AlertDialog.Builder builder=new AlertDialog.Builder(getContext());
         builder.setTitle("Escolha uma Opção");
         builder.setItems(opcoes, new DialogInterface.OnClickListener() {
             @Override
@@ -463,14 +463,13 @@ public class Parte2_CheckList_Caminhao extends Fragment {
             Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(fileImagem));
 
-            if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N)
-            {
-                String authorities=getContext().getPackageName()+".provider";
-                Uri imageUri= FileProvider.getUriForFile(getContext(),authorities,fileImagem);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-            }else
+            if(Build.VERSION.SDK_INT < Build.VERSION_CODES.N)
             {
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(fileImagem));
+            }else {
+                String authorities=  this.getContext().getPackageName() + ".provider";
+                Uri imageUri= FileProvider.getUriForFile(getContext(),authorities,fileImagem);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
             }
             startActivityForResult(intent,COD_FOTO);
 
@@ -670,7 +669,14 @@ public class Parte2_CheckList_Caminhao extends Fragment {
             bmp.compress(Bitmap.CompressFormat.PNG, 90, out);
             out.close();
             // **Warning:** This will fail for API >= 24, use a FileProvider as shown below instead.
-            bmpUri = Uri.fromFile(file);
+            if (Build.VERSION.SDK_INT >= 24){
+                String authorities=  this.getContext().getPackageName() + ".provider";
+                bmpUri= FileProvider.getUriForFile(getContext(),authorities,fileImagem);
+            }else{
+                bmpUri = Uri.fromFile(file);
+            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
